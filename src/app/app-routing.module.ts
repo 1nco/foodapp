@@ -14,7 +14,8 @@ const routes: Routes = [
   { path: 'list/:id', component: FoodListComponent, canActivate: [FoodListLoadGuard] },
   { path: 'search/:id', component: FoodListComponent, canActivate: [SearchLoardGuard] },
   { path: 'recipe/:id', component: RecipeComponent, canActivate: [RecipeLoadGuard] },
-  { path: 'random', component: RecipeComponent, canActivate: [RandomLoadGuard] }
+  { path: 'random', component: RecipeComponent, canActivate: [RandomLoadGuard] },
+  { path: '', redirectTo: 'categories', pathMatch: 'full'}
 ];
 
 @NgModule({
