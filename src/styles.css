@@ -1,0 +1,127 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+.color-orangeweb {
+  color: #FCA311;
+}
+
+.background-color-orangeweb {
+  background-color: #FCA311;
+}
+
+.color-white {
+  color: white;
+}
+
+.color-oxfordblue {
+  color: #14213D;
+}
+
+.background-color-oxfordblue {
+  background-color: #14213D;
+}
+
+.color-platinum {
+  color: #E5E5E5;
+}
+
+.background-color-platinum {
+  background-color: #E5E5E5;
+}
+
+
+.btn-orangeweb {
+  transition-duration: 0.2s;
+  background-color: #FCA311;
+  border: 1px solid #FCA311;
+  border-radius: 4px;
+  color: white;
+}
+
+.btn-orangeweb:hover {
+  background-color: orange;
+  color: white;
+}
+
+.text-align-center {
+  width: 100%;
+  text-align: center;
+}
+
+.btn-save {
+  transition-duration: 0.2s;
+  background-color: #019175;
+  border: 1px solid #019175;
+  border-radius: 4px;
+  color: white;
+}
+
+.custom-text-area {
+  resize: none;
+  height: 300px;
+  overflow: auto;
+}
+
+.img-box-150 {
+  float: left;
+  width:  150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.img-box-277 {
+  float: left;
+  width:  277px;
+  height: 277px;
+  object-fit: cover;
+}
+
+.img-box-48 {
+  float: left;
+  width:  48px;
+  height: 48px;
+  object-fit: cover;
+}
+
+.break {
+  width: 100%;
+}
+
+.img-wrapper {
+  display: inline-block; /* change the default display type to inline-block */
+  overflow: hidden;      /* hide the overflow */
+}
+
+
+.w-30 {
+  width: 30%;
+}
+
+.w-45 {
+  width: 45%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.font-size-large {
+  font-size: large;
+}
+
+.font-size-medium {
+  font-size: medium;
+}
+
+.clickable-text {
+  cursor: pointer;
+}
+
+.clickable-text:hover {
+  color: #bebebe;
+  text-decoration: underline;
+}
+
+.clickable {
+  cursor: pointer;
+}

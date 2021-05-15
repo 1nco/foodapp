@@ -1,0 +1,12 @@
+<div *ngIf="item" class="card clickable p-2" style="width: 300px;" (click)="clicked()">
+  <div class="d-flex justify-content-center">
+    <div class="img-wrapper d-flex justify-content-center" style="width: 150px; height: 150px">
+      <img class="img-box-150" src="{{item.picture}}">
+    </div>
+  </div>
+    <div class="font-size-large mt-2">
+      <strong>
+        <label class="text-align-center clickable-text">{{item.name}}</label>
+      </strong>
+    </div>
+</div>

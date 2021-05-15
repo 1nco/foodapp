@@ -1,0 +1,13 @@
+<h3 class="text-align-center mt-3">{{recipeService.recipe?.strMeal}}</h3>
+
+<div class="mt-4">
+  <div class="d-flex justify-content-center">
+    <div class="img-wrapper d-flex justify-content-center" style="width: 277px; height: 277px">
+      <img class="img-box-277" src="{{recipeService.recipe?.strMealThumb}}">
+    </div>
+  </div>
+  <hr/>
+  <label style="white-space: pre-line">{{getIngredients()}}</label>
+  <hr/>
+  <label style="white-space: pre-line">{{recipeService?.recipe.strInstructions}}</label>
+</div>
