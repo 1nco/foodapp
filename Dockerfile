@@ -14,7 +14,7 @@ RUN npm install -g @angular/cli@11.2.5
 COPY . .
 
 # generate build
-RUN ng build--prod --base-href /food/ --output-path=dist
+RUN ng build --prod --base-href /food/ --output-path=dist
 
 ############
 ### prod ###
