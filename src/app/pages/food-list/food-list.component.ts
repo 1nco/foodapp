@@ -28,6 +28,6 @@ export class FoodListComponent implements OnInit {
   }
 
   itemClicked(item: CardItem) {
-    this.router.navigateByUrl(`recipe/${item?.id}`);
+    this.router.navigateByUrl(`food/recipe/${item?.id}`);
   }
 }

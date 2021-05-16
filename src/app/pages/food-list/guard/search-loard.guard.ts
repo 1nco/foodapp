@@ -19,7 +19,7 @@ export class SearchLoardGuard implements CanActivate {
         return true;
       }),
       catchError(err => {
-        this.router.navigateByUrl('categories');
+        this.router.navigateByUrl('food/categories');
         return of(false);
       }));
   }
