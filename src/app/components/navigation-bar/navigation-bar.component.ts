@@ -24,7 +24,7 @@ export class NavigationBarComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.subs.push(this.searchFc.valueChanges.pipe(debounceTime(200)).subscribe(value => {
       if (value.length > 0) {
-        this.router.navigateByUrl(`food/search/${value}`);
+        this.router.navigateByUrl(`search/${value}`);
       }
     }));
     this.router.events.subscribe((val) => {
@@ -39,10 +39,10 @@ export class NavigationBarComponent implements OnInit, OnDestroy {
 
   goToCategories() {
     this.searchFc.setValue('');
-    this.router.navigateByUrl('food/categories');
+    this.router.navigateByUrl('categories');
   }
 
   goToRandom() {
-    this.router.navigateByUrl('food/random');
+    this.router.navigateByUrl('random');
   }
 }

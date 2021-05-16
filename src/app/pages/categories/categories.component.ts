@@ -19,7 +19,7 @@ export class CategoriesComponent implements OnInit {
   }
 
   itemClicked(item: CardItem) {
-    this.router.navigateByUrl(`food/list/${item.name}`);
+    this.router.navigateByUrl(`list/${item.name}`);
   }
 
   mapCategoryToCardItem(category: Category) {
