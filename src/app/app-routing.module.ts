@@ -10,12 +10,12 @@ import { RandomLoadGuard } from './pages/recipe/guard/random-load.guard';
 import { SearchLoardGuard } from './pages/food-list/guard/search-loard.guard';
 
 const routes: Routes = [
-  { path: '/food/categories', component: CategoriesComponent, canActivate: [CategoriesLoadGuard] },
-  { path: '/food/list/:id', component: FoodListComponent, canActivate: [FoodListLoadGuard] },
-  { path: '/food/search/:id', component: FoodListComponent, canActivate: [SearchLoardGuard] },
-  { path: '/food/recipe/:id', component: RecipeComponent, canActivate: [RecipeLoadGuard] },
-  { path: '/food/random', component: RecipeComponent, canActivate: [RandomLoadGuard] },
-  { path: '/food', redirectTo: '/food/categories', pathMatch: 'full'}
+  { path: 'food/categories', component: CategoriesComponent, canActivate: [CategoriesLoadGuard] },
+  { path: 'food/list/:id', component: FoodListComponent, canActivate: [FoodListLoadGuard] },
+  { path: 'food/search/:id', component: FoodListComponent, canActivate: [SearchLoardGuard] },
+  { path: 'food/recipe/:id', component: RecipeComponent, canActivate: [RecipeLoadGuard] },
+  { path: 'food/random', component: RecipeComponent, canActivate: [RandomLoadGuard] },
+  // { path: '/food', redirectTo: '/food/categories', pathMatch: 'full'}
 ];
 
 @NgModule({
